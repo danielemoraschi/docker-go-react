@@ -16,4 +16,5 @@ VOLUME /go/src/app
 RUN git config --global http.sslVerify true
 
 # Start the app
-CMD glide install && go run main.go
+RUN glide install
+CMD go run main.go
