@@ -12,4 +12,6 @@ EXPOSE 3000
 VOLUME /usr/src/app
 
 # Start the app
-CMD npm install && npm start
+RUN npm install -g create-react-app
+RUN npm install
+CMD npm start
