@@ -5,7 +5,6 @@ services:
       build: ./backend
       image: goreact/backend
       privileged: true
-      # command: "glide install && go run main.go"
       ports:
         - "3080:3000"
       volumes:
