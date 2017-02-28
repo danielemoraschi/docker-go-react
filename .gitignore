@@ -1,0 +1,18 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+vendor
+.glide
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+backend/.glide/cache
+.DS_Store
+.env
+npm-debug.log

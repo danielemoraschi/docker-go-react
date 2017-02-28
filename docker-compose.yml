@@ -1,0 +1,21 @@
+version: '2'
+services:
+
+    backend:
+      build: ./backend
+      image: goreact/backend
+      privileged: true
+      # command: "glide install && go run main.go"
+      ports:
+        - "3080:3000"
+      volumes:
+        - ./backend:/go/src/app
+
+    frontend:
+      build: ./frontend
+      image: goreact/frontend
+      privileged: true
+      ports:
+        - "3001:3000"
+      volumes:
+        - ./frontend:/usr/src/app

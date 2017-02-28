@@ -1,0 +1,3 @@
+package: github.com/danielemoraschi/docker-go-react
+import:
+- package: github.com/labstack/echo
